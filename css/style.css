@@ -1,0 +1,185 @@
+/* USE MOBILE FIRST APPROACH */
+
+/*
+BREAK POINTS ARE:
+
+768px - TABLETS
+1024px - DESKTOP
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #4a4a4a;
+  background-color: #fafafa;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #4a4a4a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+ul li a {
+  width: 100%;
+}
+
+main {
+  background-color: #fff;
+}
+
+header {
+  padding: 20px 20px 50px 20px;
+}
+
+main,
+footer {
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  color: #7f7f7f;
+  margin-bottom: 20px;
+}
+
+hr {
+  border-top: 1px solid #e8e8e8;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+
+  main {
+    padding: 10px;
+  }
+
+  .card {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .bio-text {
+    float: left;
+    width: 66.6666%;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .bio-img {
+    float: right;
+    width: 33.3333%;
+  }
+
+  .hidden-tablet-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
+    display: inline-block;
+    float: right;
+  }
+
+  ul li {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    float: left;
+    width: 33.3333%;
+  }
+
+  main {
+    margin: 0 20px;
+  }
+
+  /*header {
+    padding: 20px 20px 50px 20px;
+  }
+
+  main,
+  footer {
+    padding: 20px;
+  }*/
+
+  h1 {
+    float: left;
+  }
+
+  header nav {
+    float: right;
+  }
+
+}

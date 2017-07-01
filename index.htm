@@ -12,7 +12,7 @@
 
   <header>
     <h1 id="home">Martin Jones</h1>
-    <nav>
+    <nav class="clearfix">
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -20,10 +20,10 @@
       </ul>
     </nav>
 
-    <section class="clearfix">
+    <div class="clearfix">
       <img src="images/responsive-layout-profile.png" alt="" class="bio-img">
       <p class="bio-text">Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-    </section>
+    </div>
 
   </header>
 
@@ -51,7 +51,7 @@
 
     <div class="card">
       <img src="images/portfolio-4.png" alt="">
-      <h3>Map of Favourite Spots</h3>
+      <h3>Map of Favorite Spots</h3>
       <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
     </div>
 
@@ -69,22 +69,24 @@
 
   </main>
 
-  <footer>
-    <h2 id="contact">Contact</h2>
-    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone <strong>+1 (111) 555-1234</strong></p>
-    <p>Email <strong>martinjones@example.com</strong></p>
-    <hr>
-    <p class="float-left"><strong>Martin Jones</strong></p>
-    <p class="float-right hidden-tablet-desktop"><a href="#home"><strong>BACK TO TOP</strong></a></p>
-    <nav class="hidden-mobile">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <footer class="clearfix">
+    <div class="contact-wrapper">
+      <h2 id="contact">CONTACT</h2>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p>Phone <strong>+1 (111) 555-1234</strong></p>
+        <p>Email <strong>martinjones@example.com</strong></p>
+      </div>
+      <hr>
+      <p class="float-left dark-grey"><strong>Martin Jones</strong></p>
+      <p class="float-right hidden-tablet-desktop"><a href="#home"><strong>BACK TO TOP</strong></a></p>
+      <nav class="hidden-mobile">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </footer>
 
-</body>
-</html>
+  </body>
+  </html>
